@@ -1,0 +1,55 @@
+.parallax-container
+  background url('../../img/gradient.png') top center no-repeat
+  background-size contain
+  height 70rem
+  max-width 1300px
+  padding-top 18rem
+  margin 0 auto
+  margin-bottom -15rem
+
+// #scene
+//   position relative
+
+.parallax
+  position absolute
+  &--sun
+    img
+      transform translate(35rem, -35rem)
+  &--raven
+    img
+      transform translate(28rem, -15rem)
+  &--sweet
+    img
+      transform translate(90%, -17rem)
+  &--cloud-2
+    img
+      transform translateX(90rem)
+  &--cloud-3
+    img
+      transform translate(85rem, -17rem)
+
+
+.prlx
+  .grid
+    position relative
+  &__item
+    position absolute
+    transition transform .1s linear
+  &__plane
+    position absolute
+    right 0
+    top 240rem
+  &__cloud--1
+    right 0
+    top 98.5rem
+  &__cloud--2
+    left -16rem
+    top 150rem
+  &__cloud--3
+    left 0
+    top 180rem
+  &__cloud--4
+    left -4rem
+    top 255rem
+
+

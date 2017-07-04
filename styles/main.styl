@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic')
+
+@import 'helpers/variables.styl'
+@import 'helpers/mixins.styl'
+@import 'helpers/helpers.styl'
+
+@import 'base/base.styl'
+@import 'base/form.styl'
+@import 'base/typography.styl'
+@import 'base/animations.styl'
+@import 'base/parallax.styl'
+@import 'base/modal.styl'
+
+@import 'modifications/modifications.styl'
+
+.grid--container
+  max-width 942px
+
+.page
+  background-color $primary
+  color $main
+  overflow-x hidden
+
+.main-header
+  padding-top 3.5rem
+
+.menu
+  max-width 9rem
+  &__icon
+    background rgba(#fff, .14) url('../../img/menu.png') 50% no-repeat
+    border-radius 50%
+    circle(8.5rem)
+    cursor pointer
+    display block
+    margin-bottom 1rem
+  &__text
+    font-size 1.4rem
+    opacity .47
+    // transform translateX(-2rem)
+    text-align center
+
+.logo
+  background url('../../img/logo.png') top center no-repeat
+  display block
+  size(18rem, 15.5rem)
+
+.hero
+  // background url('../../img/hero.png') top center no-repeat
+  // background-size cover
+  // height 80rem
+  // max-width 1290px
+  margin 0 auto
+  // margin-bottom 3.5rem
+
+.text
+  &__img
+    max-width 100%
+    img
+      display block
+      max-width 100%
+
+.arrows
+  align-items flex-end
+  display flex
+  justify-content space-between
+  &__link
+    color #fff
+    font-family $font-header
+    font-size 2.4rem
+    margin-top 1.5rem
+    position relative
+    text-decoration none
+    // width 20rem
+    &:after
+      content '›'
+      font-family $font-header
+      font-size 4rem
+      opacity 0
+      margin auto
+      position absolute
+      transition all .2s
+      top .7rem
+    &:hover
+      &:after
+        opacity 1
+    &--left
+      transform translateX(-1rem)
+      text-align right
+      width 20rem
+      &:after
+        left 0
+        top 0
+        transform rotate(180deg) translatex(-.5rem)
+      &:hover:after
+        transform rotate(180deg) translate(0)
+    &--right
+      transform translateX(3.5rem)
+      width 20rem
+      &:after
+        right 0
+        transform translateX(-.5rem)
+      &:hover:after
+        transform none
+
+  &__menu
+    .menu
+      &__icon
+        margin-bottom 0
+      &__text
+        color #fff
+        margin-bottom 1.5rem
+        transform none
+
+.main-footer
+  align-items center
+  background-color #fff
+  display flex
+  justify-content space-between
+  padding 2rem 0
+  &__magnit
+    img
+      max-width 100%
+  &__nav
+    .nav
+      &__link
+        color #363636
+        display inline-block
+        font-size 1.8rem
+        text-decoration none
+        &:not(:last-child)
+          margin-right 4rem
+
+@import 'base/media.styl'
+
+

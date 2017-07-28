@@ -6,9 +6,9 @@ block content
     .page {
       background-color: #dda86c;
     }
-    .hero--with-image {
-      background: url('./img/hero.png') top center no-repeat;
-    }
+    //- .hero--with-image {
+    //-   background: url('./img/hero.png') top center no-repeat;
+    //- }
     .flakes {
       height: 80rem;
       margin-top: 6rem;
@@ -24,12 +24,18 @@ block content
       .bg {
         display: none;
       }
+      .flakes {
+        height: 50rem;
+      }
     }
-    //- @media(max-width: 860px) {
-    //-   .hero {
-    //-     background-image: url('./img/hero-768.png');
-    //-   }
-    //- }
+    @media(max-width: 767px) {
+      .hero {
+        background-image: url('./img/9/hero-360.png');
+      }
+      .flakes {
+        height: 30rem;
+      }
+    }
 
   .page
   .bg(style="background-image: url('./img/9/bg.jpg')")

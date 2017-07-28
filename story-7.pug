@@ -4,39 +4,60 @@ block content
 
   style.
     .page {
-      background-color: #f48772;
+      background-color: #ff9068;
     }
-    .hero--with-image {
-      background: url('./img/hero.png') top center no-repeat;
+    .bg {
+      min-height: 150rem;
     }
     .flakes {
       height: 40rem;
     }
     @media(max-width: 1200px) {
       .hero {
-        background-image: url('./img/hero.png');
+        background-image: url('./img/7/hero.png');
+        margin-bottom: 8rem;
+      }
+      .flag {
+        display: none;
       }
     }
-    @media(max-width: 860px) {
+    @media(max-width: 767px) {
       .hero {
-        background-image: url('./img/hero-768.png');
+        background-image: url('./img/7/hero-360.png');
+        height: 48rem;
+        margin-bottom: 12rem;
+        transform: translateY(10rem);
+      }
+      .main-header {
+        transform: translateY(-10rem);
+      }
+      .flakes {
+        height: 30rem;
+      }
+    }
+    @media(max-width: 500px) {
+      .hero {
+        height: 35rem;
       }
     }
 
+
   .page
   .bg(style="background-image: url('./img/7/bg.jpg')")
+  .flag
+    img(src="./img/7/flag.png", alt="")
   .prlx
     .grid.grid--container
-      .prlx__item.prlx__plane
-        img(src="./img/plane.png", alt="")
-      .prlx__item.prlx__cloud--1
-        img(src="./img/prlx-1.png", alt="")
-      .prlx__item.prlx__cloud--2
-        img(src="./img/prlx-2.png", alt="")
-      .prlx__item.prlx__cloud--3
-        img(src="./img/prlx-3.png", alt="")
-      .prlx__item.prlx__cloud--4
-        img(src="./img/prlx-4.png", alt="")
+      .prlx__item.prlx__item--1
+        img(src="./img/7/prlx-1.png", alt="")
+      .prlx__item.prlx__item--2
+        img(src="./img/7/prlx-2.png", alt="")
+      .prlx__item.prlx__item--3
+        img(src="./img/7/prlx-3.png", alt="")
+      .prlx__item.prlx__item--4
+        img(src="./img/7/prlx-4.png", alt="")
+      .prlx__item.prlx__item--5
+        img(src="./img/7/prlx-5.png", alt="")
   main
     //- .hero.hero--with-image
     .hero
@@ -46,9 +67,17 @@ block content
     .parallax-container
       #scene
         div(data-depth="0.3").parallax
-          img(src="./img/7/scene-1.png", alt="" style="transform: translate(-50%, -44rem)")
+          img(src="./img/7/scene-1.png", alt="" style="transform: translate(-25%, -44rem)")
+        div(data-depth="-0.1").parallax
+          img(src="./img/7/scene-3.png", alt="" style="transform: translate(350%, -14rem)")
+        div(data-depth="0.1").parallax
+          img(src="./img/7/scene-4.png", alt="" style="transform: translate(1110%, -13rem)")
+        div(data-depth="-0.1").parallax
+          img(src="./img/7/scene-5.png", alt="" style="transform: translate(1700%, -4rem)")
         div(data-depth="0").parallax
           img(src="./img/7/sweet.png", alt="" style="transform: translate(10%, -17rem)")
+        div(data-depth="0.1").parallax
+          img(src="./img/7/scene-2.png", alt="" style="transform: translate(400%, -9rem)")
 
     .grid.grid--container
       .row

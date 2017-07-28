@@ -4,7 +4,7 @@ block content
 
   style.
     .page {
-      background-color: #91cf53;
+      background-color: #92d055;
     }
     .hero--with-image {
       background: url('./img/hero.png') top center no-repeat;
@@ -14,12 +14,21 @@ block content
     }
     @media(max-width: 1200px) {
       .hero {
-        background-image: url('./img/hero.png');
+        background-image: url('./img/8/hero.png');
+        //- height: 67rem;
       }
     }
     @media(max-width: 860px) {
       .hero {
-        background-image: url('./img/hero-768.png');
+        background-image: url('./img/8/hero-768.png');
+      }
+    }
+    @media(max-width: 767px) {
+      .hero {
+        background-image: url('./img/8/hero-360.png');
+      }
+      .flakes {
+        height: 30rem;
       }
     }
 

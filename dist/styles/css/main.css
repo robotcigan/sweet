@@ -260,6 +260,30 @@ main {
   left: -4rem;
   top: 255rem;
 }
+.prlx__item--1 {
+  right: 0;
+  top: 98.5rem;
+}
+.prlx__item--2 {
+  left: -16rem;
+  top: 150rem;
+}
+.prlx__item--3 {
+  left: 0;
+  top: 180rem;
+}
+.prlx__item--4 {
+  right: 0;
+  top: 240rem;
+}
+.prlx__item--5 {
+  left: -4rem;
+  top: 255rem;
+}
+.flag {
+  position: absolute;
+  right: 0;
+}
 .modal {
   -webkit-animation: bigFadeUp 0.3s forwards ease;
   animation: bigFadeUp 0.3s forwards ease;
@@ -935,6 +959,7 @@ main {
 @media (max-width: 500px) {
   .main-header {
     background-size: 13rem;
+    background-position-y: 3rem;
   }
   .main-footer__nav .nav__link {
     display: block;

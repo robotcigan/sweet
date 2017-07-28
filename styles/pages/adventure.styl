@@ -1,0 +1,116 @@
+.adventure
+  background url('../../img/adventure-bg.jpg') top center no-repeat
+  background-size cover
+  overflow hidden
+  &__logo
+    transform translateX(-2rem)
+    img
+      max-width 100%
+  &__bear
+    transform translateX(3rem)
+    img
+      max-width 100%
+
+.adventure-header
+  display flex
+  justify-content space-between
+  margin-top 13rem
+  position relative
+
+.plane-with-path
+  top 27rem
+  position absolute
+  right -8rem
+
+.content-header
+  font-family 'LifehackBasic-Regular'
+  font-size 4.3rem
+  margin 0
+  margin-bottom 1rem
+  margin-top 6rem
+
+.dashed
+  background url('../../img/dashed.png') repeat-x
+  height 6px
+  margin-bottom 3rem
+  width 100%
+  
+
+.content
+  margin-bottom 8rem
+  &__item
+    align-items center
+    display flex
+    margin-bottom 3rem
+    position relative
+    &:after
+      background url('../../img/weird-arrow.png') no-repeat
+      bottom 0
+      content ''
+      margin auto
+      opacity 0
+      position absolute
+      right .5rem
+      transition all .2s
+      size(2.5rem, 3rem)
+      transform translateX(-.5rem)
+      top 0
+    &:hover
+      &:after
+        opacity 1
+        transform none
+  &__img
+    margin-right 2rem
+    max-width 20rem
+    img
+      display block
+      max-width 100%
+  &__container
+    margin-top 1rem
+  &__header
+    display inline
+    color #fff
+    font-family $font-header
+    font-size 3.2rem
+    line-height 1.2
+    margin-bottom 1.5rem
+    &:hover
+      border-bottom 3px solid #fff
+  &__anons
+    font-size 1.5rem
+    font-style italic
+    line-height 1.2
+    max-width 37.5rem
+    margin-top 1rem
+
+@media(max-width 992px)
+  .adventure
+    &-header
+      margin-top 2rem
+    &__logo
+      max-width 25rem
+      transform translateX(2rem)
+    &__bear
+      transform translateX( -(65 / 720 * 100)% )
+    .plane-with-path
+      left (440 / 725 * 100)%
+      right initial
+
+@media(max-width 767px)
+  .adventure
+    &__logo
+      transform translateX(-1rem)
+    &__bear
+      max-width 15rem
+      transform translateX(1rem)
+  .plane-with-path
+    display none
+  .adventure-header
+    margin-bottom 2rem
+  .content
+    &__header
+      font-size 2.4rem
+    &__anons
+      display none
+  .pagination
+    display none !important

@@ -4,14 +4,9 @@
 @media(max-width 1200px)
   .parallax-container
     display none
-  .hero
-    background-image url('../../img/hero.png')
-    background-position top center
-    background-repeat no-repeat
-    background-size cover
-    height 80rem
-    max-width 1290px
-    margin-bottom -5rem
+  .main-header
+    background-size 24rem
+
 
 @media(max-width 1000px)
   .grid--container
@@ -19,15 +14,12 @@
   .row
     margin 0 -2%
   .main-footer
-    flex-direction column
+    &__container
+      flex-direction column
     &__magnit
       margin-bottom 2rem
       margin-right 1rem
 
-@media(max-width 860px)
-  .hero
-    background-image url('../../img/hero-768.png')
-    margin-bottom -10rem
 
 @media(max-width: 800px)
   .main-footer
@@ -42,6 +34,8 @@
   .text
     .h1
       font-size 5rem
+  .prlx
+    display none
 
 @media(max-width 700px)
   .logo
@@ -90,6 +84,9 @@
           transform translateX(.5rem)
 
 @media(max-width 550px)
+  .text
+    .h1
+      font-size 4rem
   .hero
     // background-image url('../../img/hero-360.png')
     height 50rem
@@ -98,6 +95,8 @@
     transform translateY(-1rem)
 
 @media(max-width 500px)
+  .main-header
+    background-size 13rem
   .main-footer
     &__nav
       .nav
@@ -106,6 +105,8 @@
           margin-right 0 !important
 
 @media(max-width 360px)
+  .main-header
+    background-size 11rem
   .text
     .h1
       font-size 2.8rem

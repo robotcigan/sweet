@@ -28,8 +28,8 @@ gulp.task 'stylus', ->
       # compress: true
     .on 'error', swallowError
     .pipe autoprefixer({browsers: ['> 1%', 'last 5 version','IE 10'], cascade: false})
-    .pipe uglifycss
-      'uglyComments': true
+    # .pipe uglifycss
+    #   'uglyComments': true
     .pipe sourcemaps.write('.')
     .pipe gulp.dest 'dist/styles/css/'
     .pipe(reload({stream: true, match: '**/*.css'}))
@@ -54,7 +54,7 @@ gulp.task 'es6', ->
 
 
 gulp.task 'imagemin', ->
-  gulp.src 'img/*'
+  gulp.src 'img/**/*'
   .pipe imagemin([
     imagemin.jpegtran({progressive: true})
   ], {
@@ -80,7 +80,7 @@ gulp.task 'default', ['pug', 'stylus', 'imagemin', 'es6'], ->
     notify: false
     open: false
 
-  gulp.watch('img/*', ['imagemin'])
+  gulp.watch('img/**/*', ['imagemin'])
   gulp.watch 'js/main.js', ['es6']
   gulp.watch 'styles/**/*.styl', ['stylus']
   gulp.watch '*.pug', ['pug-watch']

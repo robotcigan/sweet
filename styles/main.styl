@@ -13,28 +13,49 @@
 
 @import 'modifications/modifications.styl'
 
+@import 'pages/adventure.styl'
+@import 'pages/hero.styl'
+
 .grid--container
   max-width 942px
 
 .page
-  background-color $primary
+  // background-color $primary
+  height 100%
   color $main
   overflow-x hidden
+  position fixed
+  width 100%
+  z-index -1
+
+.bg
+  background-position top center
+  background-repeat no-repeat
+  background-size cover
+  min-height 100rem
+  position absolute
+  top 0
+  width 100%
+  z-index -1
 
 .main-header
+  background url('../../img/logogo.png') no-repeat center 4rem
   padding-top 3.5rem
+  position relative
+  z-index 50
 
 .menu
-  max-width 9rem
+  max-width 6.7rem
   &__icon
     background rgba(#fff, .14) url('../../img/menu.png') 50% no-repeat
     border-radius 50%
-    circle(8.5rem)
+    circle(6.7rem)
     cursor pointer
     display block
     margin-bottom 1rem
   &__text
     font-size 1.4rem
+    font-style normal
     opacity .47
     // transform translateX(-2rem)
     text-align center
@@ -46,7 +67,7 @@
 
 .hero
   // background url('../../img/hero.png') top center no-repeat
-  // background-size cover
+  background-size cover
   // height 80rem
   // max-width 1290px
   margin 0 auto
@@ -55,8 +76,9 @@
 .text
   &__img
     max-width 100%
+    text-align center
     img
-      display block
+      display inline-block
       max-width 100%
 
 .arrows
@@ -112,11 +134,13 @@
         transform none
 
 .main-footer
-  align-items center
   background-color #fff
-  display flex
-  justify-content space-between
+  margin-top 6rem
   padding 2rem 0
+  &__container
+    align-items center
+    display flex
+    justify-content space-between
   &__magnit
     img
       max-width 100%
@@ -127,8 +151,38 @@
         display inline-block
         font-size 1.8rem
         text-decoration none
+        padding-bottom 2px
+        &:hover
+          border-bottom 1px solid rgba(#363636, .2)
         &:not(:last-child)
           margin-right 4rem
+  &--without-offset
+    margin-top 0
+
+.flakes
+  background-position top center
+  background-repeat no-repeat
+  background-size cover
+  height 28.5rem
+  // transform translateY(6rem)
+  width 100%
+
+.pagination
+  align-items center
+  display flex
+  margin-bottom 6rem
+  &__link
+    color #fff
+    font-family $font-header
+    font-size 3.4rem
+    margin-right 4rem
+    text-decoration none
+    &--active
+      font-size 6.5rem
+      margin-right 3rem
+    &--arrow
+      margin-left 2rem
+
 
 @import 'base/media.styl'
 

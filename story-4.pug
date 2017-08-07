@@ -25,18 +25,6 @@ block content
 
   .page
   .bg(style="background-image: url('./img/4/bg.jpg')")
-  .prlx
-    .grid.grid--container
-      .prlx__item.prlx__plane
-        img(src="./img/plane.png", alt="")
-      .prlx__item.prlx__cloud--1
-        img(src="./img/prlx-1.png", alt="")
-      .prlx__item.prlx__cloud--2
-        img(src="./img/prlx-2.png", alt="")
-      .prlx__item.prlx__cloud--3
-        img(src="./img/prlx-3.png", alt="")
-      .prlx__item.prlx__cloud--4
-        img(src="./img/prlx-4.png", alt="")
   main
     //- .hero.hero--with-image
     .hero
@@ -45,6 +33,12 @@ block content
 
     .parallax-container
       #scene
+        div(data-depth="-0.1").parallax
+          img(src="./img/4/scene-1.png", alt="" style="transform: translate(34rem, -11rem)")
+        div(data-depth="-0.1").parallax
+          img(src="./img/4/scene-2.png", alt="" style="transform: translate(90rem, -15rem)")
+        div(data-depth="-0.1").parallax
+          img(src="./img/4/scene-3.png", alt="" style="transform: translate(90rem, 3rem)")
         div(data-depth="0.3").parallax.parallax--sweet
           img(src="./img/4/sweet.png", alt="")
         div(data-depth="0").parallax.parallax--cloud-2

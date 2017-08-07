@@ -12,7 +12,10 @@
   <body>
     <style>
       .page {
-        background-color: #24582b;
+        background-color: #005a24;
+      }
+      .bg {
+        min-height: 160rem;
       }
       .hero--with-image {
         background: url('./img/hero.png') top center no-repeat;
@@ -59,7 +62,7 @@
       <div class="parallax-container">
         <div id="scene">
           <div class="parallax parallax--cloud-1" data-depth="-0.07"><img src="./img/2/scene-1.png" alt=""></div>
-          <div class="parallax parallax--cloud-3" data-depth="-0.08"><img src="./img/2/scene-2.png" alt=""></div>
+          <div class="parallax" data-depth="-0.08"><img src="./img/2/scene-2.png" alt="" style="transform: translate(70rem, -10rem);"></div>
           <div class="parallax parallax--sweet" data-depth="0.3"><img src="./img/hero-2.png" alt=""></div>
         </div>
       </div>
@@ -68,7 +71,7 @@
           <div class="col col--md-10 col--md-offset-1">
             <div class="text">
               <h1 class="h1 text-center">на ферме <br> “Веселая корова”</h1>
-              <div class="text__img"><img src="./img/story/2.png" alt=""></div>
+              <div class="text__img text__img--special"><img src="./img/story/2.png" alt=""></div>
             </div>
           </div>
           <div class="col col--md-8 col--md-offset-2">

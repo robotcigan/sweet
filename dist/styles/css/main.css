@@ -683,6 +683,21 @@ main {
   display: inline-block;
   max-width: 100%;
 }
+.text__img--special {
+  position: relative;
+  z-index: 10;
+}
+.text__img--special:after {
+  background: url("../../img/2/grass.png") no-repeat top center;
+  background-size: cover;
+  content: '';
+  left: -30%;
+  height: 90rem;
+  position: absolute;
+  top: 38rem;
+  z-index: -1;
+  width: 100vw;
+}
 .arrows {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;

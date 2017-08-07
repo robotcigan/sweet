@@ -4,7 +4,10 @@ block content
 
   style.
     .page {
-      background-color: #24582b;
+      background-color: #005a24;
+    }
+    .bg {
+      min-height: 160rem;
     }
     .hero--with-image {
       background: url('./img/hero.png') top center no-repeat;
@@ -44,8 +47,8 @@ block content
       #scene
         div(data-depth="-0.07").parallax.parallax--cloud-1
           img(src="./img/2/scene-1.png", alt="")
-        div(data-depth="-0.08").parallax.parallax--cloud-3
-          img(src="./img/2/scene-2.png", alt="")
+        div(data-depth="-0.08").parallax
+          img(src="./img/2/scene-2.png", alt="" style="transform: translate(70rem, -10rem)")
         div(data-depth="0.3").parallax.parallax--sweet
           img(src="./img/hero-2.png", alt="")
         //- div(data-depth="0.1").prlx__cloud--1
@@ -65,7 +68,7 @@ block content
         .col.col--md-10.col--md-offset-1
           .text
             h1.h1.text-center на ферме <br> “Веселая корова”
-            .text__img
+            .text__img.text__img--special
               img(src="./img/story/2.png", alt="")
         .col.col--md-8.col--md-offset-2
           .text

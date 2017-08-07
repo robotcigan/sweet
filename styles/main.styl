@@ -80,6 +80,19 @@
     img
       display inline-block
       max-width 100%
+    &--special
+      position relative
+      z-index 10
+      &:after
+        background url('../../img/2/grass.png') no-repeat top center
+        background-size cover
+        content ''
+        left -30%
+        height 90rem
+        position absolute
+        top 38rem
+        z-index -1
+        width 100vw
 
 .arrows
   align-items flex-end
